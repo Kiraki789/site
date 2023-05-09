@@ -1,0 +1,161 @@
+.contact__container {
+    padding-block: 1rem;
+}
+
+.contacts__card {
+    //background-color: $artic;
+    //border: 1px solid transparentize($border-blue, .5);
+    //padding: 1.25rem .75rem;
+    //border-radius: .5rem;
+    row-gap: 1.5rem;
+}
+
+.contacts__card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    i {
+        color: $light-blue;
+        font-size: 24px;
+        margin-bottom: .5rem;
+    }
+}
+
+.contacts__card-title {
+    font-size: $h3-font-size;
+}
+
+.contacts__card-description {
+    font-size: $h4-font-size;
+}
+
+.contact__content {
+    padding-bottom: 1.25rem;
+
+    &--form {
+        padding-top: 1.75rem; 
+    }
+}
+
+.contacts__map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.25rem;
+
+    border-top: 1px solid $border-blue;
+}
+
+.contacts__map-title {
+    font-size: $h3-font-size;
+    font-weight: 600;
+    color: $title-color;
+}
+
+.contacts__maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.25rem;
+    gap: .5rem;
+}
+
+.contacts__maps-btn {
+    border: 1px solid $border-blue;
+    padding: .4rem;
+    border-radius: .5rem;
+
+    transition: .4s;
+
+    &:hover {
+        border: 1px solid $light-blue;
+        background-color: $light-blue;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+}
+
+.contacts__maps-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 15px;
+        color: $title-color;
+        margin-right: .25rem;
+    }
+}
+
+.maps-text {
+    font-weight: 600;
+    color: $title-color;
+    font-size: $smaller-font-size;
+}
+
+.contact__form-div {
+    position: relative;
+    margin-bottom: 2rem;
+    height: 4rem;
+
+    &--form-area {
+        height: 11rem;
+    }
+}
+
+.form__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $light-blue2;
+    border-radius: 1.25rem;
+    background: none;
+    color: $title-color;
+    letter-spacing: 0.03em;
+    font-size: $normal-font-size;
+    font-weight: 500;
+    outline: none;
+    padding: 1.25rem;
+    z-index: 1;
+}
+
+.form__tag {
+    position: absolute;
+    top: -.75rem;
+    left: 1.25rem;
+    padding: .25rem;
+    font-size: $small-font-size;
+    color: $light-blue2;
+    font-weight: 700;
+    background-color: $white-backround;
+    z-index: 10;
+    
+}
+
+.btn {
+    background-color: $light-blue2;
+    color: $artic;
+    font-size: $normal-font-size;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.text-pd {
+    margin-top: 0.75rem;
+    color: $cerulean;
+    font-size: $smaller-font-size;
+    font-weight: 500;
+}

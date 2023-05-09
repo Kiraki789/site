@@ -1,0 +1,120 @@
+@import "vars.scss";
+@import "blocks/header.scss";
+@import "blocks/modal.scss";
+@import "blocks/home.scss";
+@import "blocks/services.scss";
+@import "blocks/news.scss";
+@import "blocks/contacts.scss";
+/*@import "blocks/info.scss";
+
+
+
+@import "blocks/footer.scss";*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+textarea,
+input,
+button,
+body {
+	font-family: $body-font;
+	font-size: $normal-font-size;
+}
+
+body {
+	line-height: 1.5;
+	background-color: $white-backround;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+a, button {
+    background: 0 0;
+    border: 0;
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+    color: $black-blue;
+    font-weight: 400;
+}
+
+img,svg {
+    max-width: 100%;
+    height: auto;
+}
+
+textarea,
+input,
+button {
+    background-color: none;
+    border: none;
+    outline: none;
+}
+
+h1,h2,h3,h4 {
+	font-weight: 500;
+    color: $black-blue;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+	display: grid;
+}
+
+.section {
+	padding-block: 5rem 2rem;
+}
+
+.section__title {
+    text-align: center;
+    font-size: $big-font-size;
+    font-weight: 700;
+    @include gradient-text(top, $list);
+    margin-bottom: 1rem;
+}
+
+.section__subtitle {
+    color: $white;
+    font-weight: 500;
+    font-size: $h2-font-size;
+}
+
+.section__subtitle span {
+    color: $light-blue;
+}
+
+.main {
+    overflow: hidden;
+}

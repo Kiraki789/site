@@ -1,0 +1,93 @@
+$black-blue: #06283D;
+$white: #F2F6FA;
+$artic: #F1F9FE;
+$light-blue: #2AAEED;
+$light-blue2: #2F9BCF;
+$border-blue: #BEDBEF;
+$title-color: #143C55;
+$cerulean: #1C76A1;
+$white-backround: #E5F1F9;
+
+$list: $light-blue2 41.67%, $title-color 91.15%;
+@mixin gradient-text($direction, $list) { 
+    background: -webkit-linear-gradient($direction, $list);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+// fonts
+$body-font: 'Montserrat', sans-serif;
+$bigger-font-size: 3.5rem;     // 56px
+$big-font-size: 2.5rem;        // 40px
+$h2-font-size: 1.5rem;        // 20px
+$h3-font-size: 1.125rem;        // 18px
+$h4-font-size: 1rem;            // 16px
+$normal-font-size: .938rem;    // 15px
+$small-font-size: .813rem;     // 13px
+$smaller-font-size: .75rem;    // 12px
+ 
+// height
+$height-header: 2.5rem;
+    
+// margin
+$mb-0-5:    .5rem;       // 8px
+$mb-0-75:   .75rem;     // 12px
+$mb-1:      1rem;      // 16px
+$mb-1-5:    1.5rem;    // 24px
+$mb-2:      2rem;      // 32px
+$mb-2-5:    2.5rem;    // 40px
+
+// z index
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// media
+@media screen and (max-width: 1140px) {
+    $bigger-font-size: 4.5rem;      // 72px
+    $big-font-size: 4rem;           // 64px
+    $h2-font-size: 2rem;            // 32px
+    $h3-font-size: 1.25rem;         // 20px
+    $h4-font-size: 1.125rem; 
+    $normal-font-size: 1rem;        // 16px
+    $small-font-size: .875rem;      // 14px
+    $smaller-font-size: .813rem;    // 13px
+}
+
+@media screen and (max-width: 1023px) {
+    .nav__menu {
+        position: fixed;
+        background-color: $artic;
+        border: 1px solid $border-blue;
+        box-shadow: 0 8px 24px hsla(228, 66%, 45%, .15);
+        bottom: .75rem;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1.30rem 3rem;
+        border-radius: 1.25rem;
+        transition: .4s;
+    }
+
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__link {
+        color: $title-color;
+        display: flex;
+        padding: .5rem;
+        border-radius: 50%;
+
+        i {
+            font-size: 1.25rem;
+        }
+    }
+
+    .nav__link span {
+        display: none;
+    }
+}
